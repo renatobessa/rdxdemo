@@ -1,6 +1,6 @@
-* {    
+* {
+    padding: 0;
     margin: 0;
-    padding: 0;    
 }
 
 *,*::before,*::after {
@@ -10,100 +10,34 @@
 html {    
     box-sizing: border-box;
     font-size: 62.5%; /* Define 1 rem = 10 pixel */
+    scroll-behavior: smooth;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    margin: 2rem;
     font-family: 'Roboto Slab', serif;    
     line-height: 1.6;
 }
 
-section {
-    display: flex;       
+section { 
+    /* margin: 5% 0 0 0; */
+    height: 92%;
 }
 
-/* #header {    
-    position: fixed;
-    left: 0;
-    top: 0;
-}
-*/
-
-#secvideo {
-    flex-direction: column;    
-    margin: 5rem 5rem 0 0;
-    overflow: auto;
-    width: 100%;     
-} 
-
-#secvideo span { 
-    margin: 5rem;   
-    width: 50%;
-    font-size: 6rem;            
-    color: #fff; 
-    text-align: left;     
-} 
-
-#videobg {  
-    position: absolute;  
-    width: 97.5%;
-    height: 70rem;
-    z-index: -1;
-    object-fit: fill;
-    opacity: 0.6;
+.header {
+    display: flex; 
+    position: sticky; 
+    height: 12%;
+    top: 0; 
+    width: 100%;
+    padding: 0 0 0 10%;
+    background: #fff; 
+    z-index: 999;
 }
 
-#secCard {
-    flex-direction: column;
-    margin: 5rem 0 5rem 0;
-    text-align: left;
-    /* -webkit-box-shadow: 10px 10px 34px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 34px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 34px 0px rgba(0,0,0,0.75); */
-}
-
-#secCard h1 {
-    color: #000;
-    font-size: 8rem;
-    margin: 0 0 0 5rem;
-}
-
-#secCard span {
-    margin: 1rem 0 0 5rem;
-    font-size: 4rem;
-}
-
-#secQuemSomos {
-    flex-direction: column;
-    margin: 5rem 0 5rem 0;
-    text-align: left; 
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ); 
-    height: 80rem;  
-}
-
-#secQuemSomos img {
-    width: 97.5%;
-    height: 80rem;    
-    position: absolute;
-    opacity: .6;
-    z-index: -1;
-}
-
-#secQuemSomos h1 {
-    color: #fff;
-    font-size: 8rem;
-    margin: 0 0 0 5rem;
-}
-
-#secQuemSomos span {
-    color: #fff;
-    margin: 1rem 0 0 5rem;
-    font-size: 4rem;
-}
-
-#footer {    
+.footer {
+    display:flex;
     align-items: center;
     justify-content: center;
     position: fixed;
@@ -114,23 +48,18 @@ section {
     background-color: #636161;
     font-size: 1.5rem;
     color: #919191;
-    text-align: center;
-}
-
-#logo {
-    margin-left: 25rem;
+    text-align: center;    
 }
 
 #menu {
     align-self: flex-end;
-    margin-left: 25rem;
+    margin-left: 10%;
 }
 
-#menu ul {    
+#menu ul {
     display: flex;
-    padding:0px;
-    margin:0px;    
-    list-style:none;
+    list-style: none;
+    padding: 2rem;    
 }
 
 #menu ul li {
@@ -145,6 +74,28 @@ section {
     font-size: 2.6rem;
 }
 
+#menu ul li .link {
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    color: #000;
+    font-size: 2.6rem;
+    cursor: pointer;
+}
+
+#menu ul li .link:after {
+    display: block;
+    content: '';
+    border-bottom: 0.3rem solid #636161;  
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;  
+}
+
+#menu ul li .link:hover:after { 
+    transform: scaleX(1);
+}
+
 #menu ul li a:after {
     display: block;
     content: '';
@@ -157,15 +108,10 @@ section {
     transform: scaleX(1);
 }
 
-#submenu {    
-    margin-left: 25rem;
-}
-
 #submenu ul {    
-    display: flex;
-    padding:0px;
-    margin:0px;    
-    list-style:none;
+    padding-left: 25rem;
+    display: flex;   
+    list-style:none;    
 }
 
 #submenu ul li {
@@ -184,44 +130,105 @@ section {
     color: #fff;
 }
 
-@media screen and (max-width: 1550px){
+#secvideo1 {
+    flex-direction: column;        
+    overflow: none;    
+    /* margin: 6.1% 0 0 0; */
+} 
 
-    #logo {
-        margin-left: 14rem;
-    }
-    
-    #menu {
-        align-self: flex-end;
-        margin-left: 14rem;
-    }
+#secvideo1 span {  
+    position: absolute;        
+    left: 8rem; 
+    margin-top: 5rem;
+    width: 50%;     
+    font-size: 6rem;            
+    color: #fff; 
+    z-index: -1;        
+} 
 
-    #menu ul li {
-        display: flex;
-        margin: 0.6rem;
-    }
-    
-    #menu ul li a {
-        display: inline-block;
-        text-decoration: none;
-        color: #000;
-        font-size: 2rem;
-    }
+#video1 {  
+    position: relative;  
+    width: 100%;
+    z-index: -2;
+    object-fit: fill;
+    /* opacity: 0.6; */
+}
 
-    #secvideo span { 
-        margin: 2.5rem;   
-        width: 50%;
-        font-size: 4rem;            
-        color: #fff; 
-        text-align: left;     
-    } 
+#secNossoServico {
+    display: flex; 
+    justify-content: center;   
+    align-items: center;
+    height: 85rem;
+}
 
-    #videobg {  
-        position: absolute;  
-        width: 97.5%;
-        height: 50rem;
-        z-index: -1;
-        object-fit: fill;
-        opacity: 0.6;
-    }
-    
+#secNossoServico h1{
+    color: #000;
+    font-size: 7rem;
+}
+
+#secNossoServico span {
+    /* padding: 5rem; */
+    font-size: 3.6rem;
+}
+
+.card {    
+    margin: 5rem;
+    padding: 5rem;
+    width: 25%;
+    height: 90%;
+    -webkit-box-shadow: 10px 10px 34px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 34px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 34px 0px rgba(0,0,0,0.75);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card .round {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: orange;    
+    margin-left: 35%;
+}
+
+.card h2 {
+    text-align: center;    
+    font-size: 3.6rem;
+}
+
+.card p {
+    margin: 1rem;
+    font-size: 1.6rem;
+}
+
+#secQuemSomos {
+    display: flex; 
+    flex-direction: column;
+    height: 90rem;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ); 
+}
+
+#secQuemSomos img {    
+    width: 100%;
+    height: 95.9%;    
+    position: absolute;    
+    z-index: -1;
+}
+
+#secQuemSomos h1 {
+    margin-left: 5rem;
+    color: #fff;
+    font-size: 7rem;
+}
+
+#secQuemSomos p {
+    color: #fff;
+    margin: 1rem 0 0 5rem;
+    font-size: 3.6rem;
+}
+
+#secClientes {
+    display: flex;
 }

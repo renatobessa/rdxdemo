@@ -4,24 +4,27 @@
 
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="scripts/index.js"></script>
     </head>
     <body>
-        <section id="header">    
+        <div class="header">
             <figure id="logo">
                 <img src="image/rdxlogo1.png" alt="Logo1">
                 <img src="image/rdxlogo2.png" alt="Logo2">
             </figure>        
             <nav id="menu">
-                <ul>                    
-                    <li><a href="#">Quem Somos</a></li>
+                <ul>   
+                    <li><a href="#secNossoServico">Nossos Serviços</a></li>                 
+                    <li><a href="#secQuemSomos">Quem Somos</a></li>
                     <li><a href="#">Clientes</a></li>
                     <li><a href="#">Nosso Trabalho</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
             </nav>
-        </section>
-        <section id="secvideo">
-            <video autoplay muted loop id="videobg">
+        </div>
+        <section id="secvideo1">
+            <video autoplay muted loop id="video1">
                 <source src="video/White-Board.mp4" type="video/mp4">
             </video>
             <span>
@@ -29,39 +32,60 @@
                  Sit amet risus nullam eget felis eget nunc lobortis.
             </span>
         </section>
-        <section id="secCard">
-            <h1>Conheça nossos serviços.</h1>
-            <span>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                 Sit amet risus nullam eget felis eget nunc lobortis. Nunc sed augue lacus viverra vitae congue eu consequat ac.
-                  Cras ornare arcu dui vivamus arcu felis bibendum ut tristique. Posuere urna nec tincidunt praesent semper feugiat nibh.
-                   Pretium aenean pharetra magna ac placerat vestibulum lectus mauris. Et molestie ac feugiat sed lectus vestibulum mattis.
-                    Id velit ut tortor pretium viverra suspendisse potenti nullam. Nisl pretium fusce id velit. Lacus viverra vitae congue eu consequat.
-                 Etiam tempor orci eu lobortis elementum. Tellus molestie nunc non blandit massa enim. Scelerisque fermentum dui faucibus in ornare quam viverra orci.
-            </span>
-        </section>
+        <section id="secNossoServico">
+            <div class="card">
+                <div class="round"></div>
+                <h2>Serviço 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Sit amet risus nullam eget felis eget nunc lobortis.</p>
+            </div>
+
+            <div class="card">
+                <div class="round"></div>
+                <h2>Serviço 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Sit amet risus nullam eget felis eget nunc lobortis.</p>
+            </div>
+
+            <div class="card">
+                <div class="round"></div>
+                <h2>Serviço 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Sit amet risus nullam eget felis eget nunc lobortis.</p>
+            </div>
+        </section> 
         <section id="secQuemSomos">
             <img src="image/office2.jpg" alt="Quem Somos">
-            <h1>Quem Somos.</h1>
-            <span>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                 Sit amet risus nullam eget felis eget nunc lobortis. Nunc sed augue lacus viverra vitae congue eu consequat ac.
-                  Cras ornare arcu dui vivamus arcu felis bibendum ut tristique. Posuere urna nec tincidunt praesent semper feugiat nibh.
-                   Pretium aenean pharetra magna ac placerat vestibulum lectus mauris. Et molestie ac feugiat sed lectus vestibulum mattis.
-                    Id velit ut tortor pretium viverra suspendisse potenti nullam. Nisl pretium fusce id velit. Lacus viverra vitae congue eu consequat.
-                 Etiam tempor orci eu lobortis elementum. Tellus molestie nunc non blandit massa enim. Scelerisque fermentum dui faucibus in ornare quam viverra orci.
-            </span>
-        </section>
-        <section id="footer">
-           <span id="copyright">© 2020 HubLinx</span> 
-           <nav id="submenu">
-            <ul>                
-                <li><a href="#">Quem Somos</a></li>
-                <li><a href="#">Clientes</a></li>
-                <li><a href="#">Nosso Trabalho</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-        </section>       
+            <h1>Quem Somos</h1>
+            <p>
+                A empresa RDX Consultoria atua na área de recuperação de créditos não tributários inativos pertencentes a empresas de grande e médio porte.
+                Nosso escritório possui uma equipe multidisciplinar,
+                formada por profissionais com vasta experiência, o que ao longo do tempo tem nos proporcionado realizar trabalhos com surpreendentes resultados.
+            </p>
+            <p>
+                Nossa equipe atua com eficácia nos procedimentos necessários junto aos órgãos da administração pública em geral e na esfera judicial trabalhista,
+                promovendo a habilitação de seus clientes, no resgate dos valores referentes aos depósitos recursais efetuados em ações trabalhistas em todo território nacional,
+                cujos depositários fiéis são a Caixa Econômica Federal e o Banco do Brasil.
+            </p>
+        </section> 
+        <section id="secClientes">
+            <form action="">
+                <input type="text">
+                <input type="text">
+
+                <input type="button" value="Teste">
+            </form>
+        </section>      
+        <div class="footer">
+            <span id="copyright">© 2020 HubLinx</span>
+            <nav id="submenu">
+                <ul>
+                    <li><a href="#">Quem Somos</a></li>
+                    <li><a href="#">Clientes</a></li>
+                    <li><a href="#">Nosso Trabalho</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </body>
 </html>
