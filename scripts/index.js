@@ -22,4 +22,24 @@ $(document).ready(function(){
         });
       } // End if
     });
+
+    
+
+    
   });
+
+  $(window).scroll(function() {
+    if($(window).scrollTop() > 1000){  
+      $(".returntop").removeClass("hidden");  
+      $(".returntop").addClass("visible");      
+    }
+    else{ 
+      $(".returntop").addClass("hidden");     
+      $(".returntop").removeClass("visible");      
+    }
+    
+  });
+
+  function returnToTop(){
+    window.scrollTo(0,0);
+  }

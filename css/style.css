@@ -179,6 +179,7 @@ section {
     -webkit-box-shadow: 10px 10px 34px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 34px 0px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 34px 0px rgba(0,0,0,0.75);
+    transition: all .2s ease-in-out;
 }
 
 .card:hover {
@@ -212,7 +213,7 @@ section {
 
 #secQuemSomos img {    
     width: 100%;
-    height: 95.9%;    
+    height: 93%;    
     position: absolute;    
     z-index: -1;
 }
@@ -230,5 +231,78 @@ section {
 }
 
 #secClientes {
+    display: flex;   
+    flex-direction: column; 
+    height: 90rem;  
+    text-align: center;  
+}
+
+#secClientes h1 {
+    text-transform: uppercase;    
+    color: #000;
+    font-size: 7rem;
+}
+
+.divClientes {
     display: flex;
+    flex-wrap: wrap;    
+    margin: 2rem;
+}
+
+.containerClientes {
+    margin: 3rem;    
+}
+
+.containerClientes img {
+    width: 14rem;
+    height: 14rem;    
+    object-fit: fill;
+    transition: all .2s ease-in-out;    
+}
+
+.containerClientes img:hover {
+    transform: scale(1.1);
+    border: 3px green solid;
+}
+
+.returntop {
+    position: fixed;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background-color: #454443;
+    z-index: 999;
+    bottom: 5rem;
+    right: 5rem;    
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.returntop:hover {
+    transform: scale(1.1);
+}
+
+.returntop span {
+    display: block;
+    content:'';
+    margin: 40%;
+    background-color: #fff;    
+    height: 0.5rem;
+    width: 2rem;
+}
+
+.returntop span:first-of-type {
+    transform: translateX(-1.1rem) rotate(-40deg);
+}
+
+.returntop span:last-of-type {
+    transform: translateY(-2.8rem) translateX(0.3rem) rotate(40deg);
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
 }
