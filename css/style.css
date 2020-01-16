@@ -20,9 +20,8 @@ body {
     line-height: 1.6;
 }
 
-section { 
-    /* margin: 5% 0 0 0; */
-    height: 92%;
+h1 {
+    font-size: 7rem;
 }
 
 .header {
@@ -72,28 +71,6 @@ section {
     text-decoration: none;
     color: #000;
     font-size: 2.6rem;
-}
-
-#menu ul li .link {
-    display: inline-block;
-    text-decoration: none;
-    border: none;
-    background-color: transparent;
-    color: #000;
-    font-size: 2.6rem;
-    cursor: pointer;
-}
-
-#menu ul li .link:after {
-    display: block;
-    content: '';
-    border-bottom: 0.3rem solid #636161;  
-    transform: scaleX(0);
-    transition: transform 250ms ease-in-out;  
-}
-
-#menu ul li .link:hover:after { 
-    transform: scaleX(1);
 }
 
 #menu ul li a:after {
@@ -163,7 +140,6 @@ section {
 
 #secNossoServico h1{
     color: #000;
-    font-size: 7rem;
 }
 
 #secNossoServico span {
@@ -221,7 +197,6 @@ section {
 #secQuemSomos h1 {
     margin-left: 5rem;
     color: #fff;
-    font-size: 7rem;
 }
 
 #secQuemSomos p {
@@ -240,7 +215,6 @@ section {
 #secClientes h1 {
     text-transform: uppercase;    
     color: #000;
-    font-size: 7rem;
 }
 
 .divClientes {
@@ -263,6 +237,43 @@ section {
 .containerClientes img:hover {
     transform: scale(1.1);
     border: 3px green solid;
+}
+
+#secNossoTrabalho {
+    display: flex; 
+    flex-direction: column;
+    height: 90rem;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ); 
+}
+
+#secNossoTrabalho h1 {
+    margin-left: 5rem;
+    color: #fff;
+}
+
+#secNossoTrabalho p {
+    color: #fff;
+    margin: 1rem 0 0 5rem;
+    font-size: 3.6rem;
+}
+
+#secNossoTrabalho img {
+    width: 100%;
+    height: 93%;    
+    position: absolute;    
+    z-index: -1;
+}
+
+#secContato {
+    height: 90rem;
+    font-family: 'Bitter', serif;
+}
+
+#secContato h2 {
+    font-size: 4.6rem;
+    text-align: center;
+    top: 50%;    
+    color: #666666;
 }
 
 .returntop {
@@ -305,4 +316,53 @@ section {
 
 .visible {
     display: block;
+}
+
+
+@media only screen and (min-width: 1366px) {
+    body {  
+        line-height: 1.4;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+    
+    .header {
+        height: 90%;
+        width: 100%;
+        padding: 0 0 0 10%;                
+    }
+
+    #menu ul {
+        padding: 1.4rem;    
+    }
+    
+    #menu ul li {
+        margin: 1rem;
+    }
+    
+    #menu ul li a {    
+        font-size: 2.4rem;
+    }
+
+    #secNossoServico {
+        height: 65rem;
+    }
+
+    #secQuemSomos {
+        height: 72rem;        
+    }
+
+    #secClientes {
+        height: 70rem;           
+    }
+
+    #secNossoTrabalho {       
+        height: 70rem;        
+    }
+
+    #secContato {
+        height: 70rem;        
+    }
 }
