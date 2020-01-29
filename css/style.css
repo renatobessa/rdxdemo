@@ -93,7 +93,8 @@ h1 {
 #submenu ul {    
     padding-left: 25rem;
     display: flex;   
-    list-style:none;    
+    list-style:none;  
+    z-index: 999;  
 }
 
 #submenu ul li {
