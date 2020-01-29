@@ -188,7 +188,9 @@ h1 {
     display: flex; 
     flex-direction: column;
     height: 90rem;
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ); 
+    /* background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ); */
+    background-image: url("../image/office2.jpg"); 
+    position: relative;
 }
 
 #secQuemSomos img {    
@@ -247,12 +249,14 @@ h1 {
     display: flex; 
     flex-direction: column;
     height: 90rem;
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ); 
+    /* background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) );  */
+    position: relative;
+    background-image: url("../image/office1.jpg"); 
 }
 
 #secNossoTrabalho h1 {
     margin-left: 5rem;
-    color: #fff;
+    color: #fff;    
 }
 
 #secNossoTrabalho p {
@@ -322,6 +326,26 @@ h1 {
     display: block;
 }
 
+.parallax {
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;    
+}
+
+.blacklayer {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));  
+    position: absolute;  
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+}
+
+.tofront {
+    z-index: 998;
+}
 
 @media only screen and (max-width: 1366px) {
     body {  
