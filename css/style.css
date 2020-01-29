@@ -51,7 +51,8 @@ h1 {
     background-color: #636161;
     font-size: 1.5rem;
     color: #919191;
-    text-align: center;    
+    text-align: center;
+    z-index: 999;    
 }
 
 #menu {
