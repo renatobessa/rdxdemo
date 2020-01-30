@@ -281,6 +281,8 @@ h1 {
 #secContato {
     height: 90rem;
     font-family: 'Bitter', serif;
+    text-align: center;
+    padding: 8rem;
 }
 
 #secContato h2 {
@@ -288,6 +290,17 @@ h1 {
     text-align: center;
     top: 50%;    
     color: #666666;
+}
+
+#secContato i {
+    font-size: 9rem;
+    margin: 2rem;
+    transition: all .2s ease-in-out;
+}
+
+#secContato i:hover {
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 .returntop {
@@ -398,5 +411,18 @@ h1 {
 
     #secContato {
         height: 70rem;        
+    }
+
+    #secContato h2 {
+        font-size: 3.6rem;
+    }
+
+    #secContato i {
+        font-size: 5rem;
+        margin: 1rem;
+    }
+    
+    #secContato i:hover {
+        transform: scale(1.1);        
     }
 }
